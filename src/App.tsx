@@ -121,12 +121,7 @@ function App() {
         <RoutePlanner />
          */}
       </main>
-
-      {/* Recruiter & Architectural Info Panel 
-      <TechSpec />
-      */}
-
-      {/* Modern minimal footer */}
+      
       <footer style={{ marginTop: '3rem', padding: '1.5rem 0', borderTop: '1px solid var(--border-color)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
         <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
           © 2026 Okinawa Districts. Desenvolvido sem fins comerciais.

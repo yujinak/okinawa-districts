@@ -18,7 +18,15 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "forceConsistentCasingInFileNames": true,
+    "plugins": [{ "name": "next" }],
+    "incremental": true,
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "./dist/types/**/*.ts", "./next-env.d.ts"],
+  "exclude": ["./node_modules"],
 }

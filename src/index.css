@@ -40,6 +40,11 @@
   --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.app-container {
+  margin: 0 auto;
+  padding: 32px;
+}
+
 /* Reset & Base Styles */
 * {
   box-sizing: border-box;
@@ -95,7 +100,7 @@ body {
   display: flexbox;
   /* grid-template-columns: 1fr;
   gap: 1.5rem; */
-  margin-top: 1.5rem;
+  margin: 1.5rem;
 }
 
 @media (min-width: 1024px) {
@@ -313,39 +318,3 @@ body {
 .d-shimajiri { --active-color-hsl: var(--color-shimajiri); }
 .d-miyako { --active-color-hsl: var(--color-miyako); }
 .d-yaeyama { --active-color-hsl: var(--color-yaeyama); }
-
-/* Recruiter Panel custom accordion styles */
-.recruiter-expander {
-  margin-top: 2rem;
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  overflow: hidden;
-  transition: border-color var(--transition-normal);
-}
-
-.recruiter-header {
-  background: rgba(13, 17, 30, 0.9);
-  padding: 1.25rem 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  user-select: none;
-}
-
-.recruiter-header:hover {
-  background: rgba(22, 28, 48, 0.95);
-}
-
-.recruiter-content {
-  background: rgba(8, 11, 20, 0.95);
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
-}
-
-.recruiter-content.open {
-  max-height: 1200px;
-  padding: 1.5rem;
-  border-top: 1px solid var(--border-color);
-}
